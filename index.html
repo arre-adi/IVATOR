@@ -3,101 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+
     <title>Document</title>
 </head>
 <body>
-        
-    <style>   #parentnav{
-        position: relative;
-      }
-      
-      .rectanglenav{
-      
-          min-width: 379px;
-          max-width: 100%;
-          min-height: 236px;
-          max-height: 245px;
-      
-        box-sizing: border-box;
-        background: linear-gradient(
-          67.98deg,
-          rgba(70, 196, 255, 1) 22.40765392780304%,
-          rgba(88, 224, 169, 1) 100%
-        );
-        border-bottom-left-radius: 40px;
-        border-bottom-right-radius: 40px;
-        width: auto;
-        height: min-content;
-        position: relative;
-        top: -10px;
-        left: -10px;
-        right: -10px;
-      }
-      
-      
-      .circle {
-      
-        background-color: #555;
-        width: 357.067px;
-        height: 362.352px;
-        transform: rotate(151.501deg);
-        flex-shrink: 0;
-        border-radius: 362.352px;
-        background: linear-gradient(180deg, #1575FB 17.19%, rgba(217, 217, 217, 0.00) 100%);
-        top: -200px;
-        left: -140px;
-        position: absolute;
-      }
-      
-      .heading{
-      
-        color: #fafafafa;
-        font-family: Dongle;
-        font-size: 50px;
-        font-style: normal;
-        font-weight: 700;
-        position: absolute;
-        top: 0px;
-      
-      }
-      
-      .dpcircle{
-        width: 70px;
-        height: 70px;
-        flex-shrink: 0;
-        border-radius: 70px;
-        background: #D9D9D9;
-        position: absolute;
-        top: 97px;
-        left: 24px; 
-      }
-      
-      .name{
-        color: #fafafafa;
-        font-family: Urbanist;
-        font-size: 25px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-        top: 105px;
-        left: 117px;
-        position:absolute;
-      }
-      
-      .details{
-        color: #fafafafa;
-        font-family: Urbanist;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        position: absolute;
-        top: 130px;
-        left: 117px;
-      
-      }</style>
-    
-    <div id="parentnav">
+
+    <style>body {
+  background-color: #f0f0f0; 
+}
+
+
+
+.nav{
+  position: relative;
+}
+
+.rectanglenav{
+
+    min-width: 379px;
+    max-width: 100%;
+    min-height: 206px;
+
+  box-sizing: border-box;
+  background: linear-gradient(
+    67.98deg,
+    rgba(70, 196, 255, 1) 22.40765392780304%,
+    rgba(88, 224, 169, 1) 100%
+  );
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  width: auto;
+  height: min-content;
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
+
+
+.circle {
+
+  background-color: #555;
+  width: 357.067px;
+  height: 362.352px;
+  transform: rotate(151.501deg);
+  flex-shrink: 0;
+  border-radius: 362.352px;
+  background: linear-gradient(180deg, #1575FB 17.19%, rgba(217, 217, 217, 0.00) 100%);
+  top: -200px;
+  left: -140px;
+  position: absolute;
+}
+
+.heading{
+
+  color: #fafafafa;
+  font-family: 'Dongle', sans-serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  top: 0px;
+
+}
+
+.dpcircle{
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 70px;
+  background: #D9D9D9;
+  position: absolute;
+  top: 97px;
+  left: 24px; 
+}
+
+.name{
+  color: #fafafafa;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  top: 105px;
+  left: 117px;
+  position:absolute;
+}
+
+.details{
+  color: #fafafafa;
+font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  top: 130px;
+  left: 117px;
+
+}
+
+
+
+.dripmeter, .flowmeter{
+
+  text-align: center;
+  width: 110px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  top: 233px;
+  padding: 20px;
+}
+
+.dripmeter{
+  left: 5%; 
+  right:90%;
+  position: absolute; 
+}
+.flowmeter{
+  right: 5%;
+  left: 52%;
+  position: absolute;
+}
+
+
+.drip,.flow{
+  color: #00218E;
+font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px;
+}
+
+#reading1,#reading2{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.units{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.setrate{
+  color: #000;
+font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+#setvalue1, #setvalue2{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+
+}
+
+.change, .change1{
+  color: #332F2F;
+font-family: 'Urbanist', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline; 
+  padding: 5px;
+}
+
+  .liquiometer{
+  text-align: center;
+  width: 302px;
+  height: 60px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: absolute;
+  top:433px;
+}
+
+.liquo{
+  color: #00218E;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position:absolute;
+  top:10px;
+  padding: 5px;
+}
+
+.currstat{
+  color: #000000;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  padding: 5px;
+  top: 45px;
+}
+ 
+#reading3{
+    color: #1575FB;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 208px;
+    top: 43px;
+  }
+
+  #set3{
+    color: #1575FB;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight:700;
+    line-height: normal;
+    position: absolute;
+    left: 260px;
+    top: 55px;
+  }
+
+  .change1{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+  }
+
+  /* ALARM*/
+
+
+  .aH1{
+    color: #00218E;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position:absolute;
+    top:570px;
+    padding-left:25px;
+    }
+
+  .alarms{
+    text-align: center;
+    width: 104px;
+    height: 60px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: absolute;
+    top:610px;
+    bottom:80px;
+}
+
+#set4{
+  color: #1575FB;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px;
+}
+
+.reason{
+  font-family: 'Urbanist', sans-serif;
+}
+
+.setalarm{
+  text-align: center;
+  width: 104px;
+  height: 60px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: absolute;
+  top:610px;
+  bottom:80px;
+  left: 170px;  
+}
+
+.addalarm{
+  font-family: 'Urbanist', sans-serif;
+  left: 25px;
+  top:40px;
+  position: absolute;
+  font-size: 20px; 
+}
+</style>
+    <div id="nav">
         <div class="rectanglenav"></div>
         <div class="circle"></div>
         <div class="heading">IVATOR</div>
@@ -105,30 +335,45 @@
         <div class="name">Patient's name</div>
         <div class="details">Gender | Age | Treatment</div>
     </div>
-     <h1>Patient's name</h1>
-     <h4>Age | Gender | Treatment</h4>
-     <h1>Drip Rate</h1>
-     <h2>40</h2>
-     <h3>drops/second</h3>
-     <h3>Set rate</h3>
-     <h3> 42 </h3>
-     <h5>change</h5>
 
-     <h1>Drip Rate</h1>
-     <h2>40</h2>
-     <h3>drops/second</h3>
-     <h3>Set rate</h3>
-     <h3> 42 </h3>
-     <h5>change</h5>
 
-     <h1>Liquometer</h1>
-     <h3>Current Status</h3>
-     <h2>400</h2>
-     <h4>/500 ml</h4>
+   
+        <div class="dripmeter">
+            <div class="drip">Drip Rate</div>
+            <div id="reading1">40</div>
+            <div class="units">drops/sec</div>
+            <span class="setrate">Set rate</span> <span id="setvalue1"> 42 </span>
+            <div class="change">change</div>
+        </div>
 
-     <h1>Alarms</h1>
-     <h2>200 ml</h2>
-     <h3>Current Status</h3>
+
+        <div class="flowmeter">
+            <div class="drip">Flow Rate</div>
+            <div id="reading2">40</div>
+            <div class="units">ml/sec</div>
+            <span class="setrate">Set rate</span> <span id="setvalue2"> 42 </span>
+            <div class="change">change</div> 
+        </div>
+
+        <div class="liquiometer">
+            <div class="liquo">Liquometer</div>
+            <div class="currstat">Current Status</div>
+            <div id="reading3">400</div>
+            <div id="set3">/500 ml</div>
+            <div class="change1">change</div> 
+        </div>
+
+
+
+        <div class = "aH1">Alarms</div>
+        <div class = "alarms">
+          <div id="set4">200 ml</div>
+          <div class="reason">Add medicine</div>
+        </div>
+
+        <div class="setalarm">
+            <div class="addalarm">Add alarm</div>
+        </div>
   
 </body>
 </html>
