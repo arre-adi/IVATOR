@@ -1,4 +1,13 @@
-#parentnav{
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap');
+
+body {
+  background-color: #f0f0f0; 
+}
+
+
+
+.nav{
   position: relative;
 }
 
@@ -6,8 +15,7 @@
 
     min-width: 379px;
     max-width: 100%;
-    min-height: 236px;
-    max-height: 245px;
+    min-height: 206px;
 
   box-sizing: border-box;
   background: linear-gradient(
@@ -22,7 +30,6 @@
   position: relative;
   top: -10px;
   left: -10px;
-  right: -10px;
 }
 
 
@@ -43,7 +50,7 @@
 .heading{
 
   color: #fafafafa;
-  font-family: Dongle;
+  font-family: 'Dongle', sans-serif;
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -65,7 +72,7 @@
 
 .name{
   color: #fafafafa;
-  font-family: Urbanist;
+  font-family: 'Urbanist', sans-serif;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
@@ -77,7 +84,7 @@
 
 .details{
   color: #fafafafa;
-  font-family: Urbanist;
+font-family: 'Urbanist', sans-serif;
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
@@ -87,3 +94,227 @@
   left: 117px;
 
 }
+
+
+
+.dripmeter, .flowmeter{
+
+  text-align: center;
+  width: 110px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  top: 233px;
+  padding: 20px;
+}
+
+.dripmeter{
+  left: 5%; 
+  right:90%;
+  position: absolute; 
+}
+.flowmeter{
+  right: 5%;
+  left: 52%;
+  position: absolute;
+}
+
+
+.drip,.flow{
+  color: #00218E;
+font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px;
+}
+
+#reading1,#reading2{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.units{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+.setrate{
+  color: #000;
+font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+}
+
+#setvalue1, #setvalue2{
+  color: #1575FB;
+font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 5px;
+
+}
+
+.change, .change1{
+  color: #332F2F;
+font-family: 'Urbanist', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline; 
+  padding: 5px;
+}
+
+  .liquiometer{
+  text-align: center;
+  width: 302px;
+  height: 60px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: absolute;
+  top:433px;
+}
+
+.liquo{
+  color: #00218E;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position:absolute;
+  top:10px;
+  padding: 5px;
+}
+
+.currstat{
+  color: #000000;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: absolute;
+  padding: 5px;
+  top: 45px;
+}
+ 
+#reading3{
+    color: #1575FB;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position: absolute;
+    left: 208px;
+    top: 43px;
+  }
+
+  #set3{
+    color: #1575FB;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight:700;
+    line-height: normal;
+    position: absolute;
+    left: 260px;
+    top: 55px;
+  }
+
+  .change1{
+    position: absolute;
+    top: 70px;
+    left: 270px;
+  }
+
+  /* ALARM*/
+
+
+  .aH1{
+    color: #00218E;
+    font-family: 'Urbanist', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    position:absolute;
+    top:570px;
+    padding-left:25px;
+    }
+
+  .alarms{
+    text-align: center;
+    width: 104px;
+    height: 60px;
+    border-radius: 15px;
+    background: #FFF;
+    box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    position: absolute;
+    top:610px;
+    bottom:80px;
+}
+
+#set4{
+  color: #1575FB;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 5px;
+}
+
+.reason{
+  font-family: 'Urbanist', sans-serif;
+}
+
+.setalarm{
+  text-align: center;
+  width: 104px;
+  height: 60px;
+  border-radius: 15px;
+  background: #FFF;
+  box-shadow: 2px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  position: absolute;
+  top:610px;
+  bottom:80px;
+  left: 170px;  
+}
+
+.addalarm{
+  font-family: 'Urbanist', sans-serif;
+  left: 25px;
+  top:40px;
+  position: absolute;
+  font-size: 20px; 
+}
+
+
+
+
+
+
